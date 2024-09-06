@@ -1,0 +1,37 @@
+{
+	"contracts": {
+		"Counter": {
+			"source": "cadence/contracts/Counter.cdc",
+			"aliases": {
+				"testing": "0000000000000007"
+			}
+		},
+		"Insurance": "cadence/contracts/Insurance.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testing": "127.0.0.1:3569",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"default": {
+			"address": "179b6b1cb6755e31",
+			"key": "4b0a0fe288b7cde6818f89d1756ab545a26b6e637c84bcbced86429aab6d9d7a"
+		},
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": {
+				"type": "file",
+				"location": "emulator-account.pkey"
+			}
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"default": [
+				"Insurance"
+			]
+		}
+	}
+}
