@@ -25,6 +25,24 @@ The contract allows the user to perform 3 tasks essentially
 - The default claimable amount is set to 10000, which can be edited in `cadence/contracts/Insurance.cdc` contract. set it to the desired number you wish
 - All the transactions inside the folder `cadence/transactions` have default values, update it to perform custom operations
 
+## Executions Commands
+
+1. run the emulator using the command
+
+`flow emulator`
+
+2. deploy the contract using the command
+
+`flow dev`
+
+3. To run any transaction use the command
+
+`flow transactions send <path\to\the\transactions.cdc>`
+
+4. To run any script use the command
+
+`flow scripts execute <path\to\the\script.cdc>`git
+
 # Warning
 
 DO NOT USE THIS CODE IN PRODUCTION. THIS CODEBASE IS CREATED AS AN EDUCATIONAL PROJECT DO NOT DEPLOY IT AND USE IT IN PRODUCTION
